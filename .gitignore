@@ -27,8 +27,6 @@ example/build/
 .yarn-integrity
 
 .DS_Store
-/lib
-/dist
 .idea/
 .rpt2_cache
 .coveralls.yml
