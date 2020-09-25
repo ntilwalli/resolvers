@@ -7,25 +7,40 @@ Object {
       "id": Object {
         "message": "",
         "type": "number",
+        "types": Object {
+          "number": true,
+        },
       },
     },
     "id": Object {
       "message": "",
       "type": "number",
+      "types": Object {
+        "number": true,
+      },
     },
     "tags": Array [
       Object {
         "message": "",
         "type": "string",
+        "types": Object {
+          "string": true,
+        },
       },
       Object {
         "message": "",
         "type": "string",
+        "types": Object {
+          "string": true,
+        },
       },
     ],
     "title": Object {
       "message": "",
       "type": "string",
+      "types": Object {
+        "string": true,
+      },
     },
   },
   "values": Object {},

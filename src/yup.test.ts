@@ -280,7 +280,7 @@ describe('validateWithSchema', () => {
           name: yup.string(),
           email: yup.string(),
         })
-        .test('name', 'Email or name are required', function (value) {
+        .test('name', 'Email or name are required', function (value: any) {
           return value.name || value.email;
         }),
     )({ name: '', email: '' });

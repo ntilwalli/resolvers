@@ -1,14 +1,14 @@
-import { struct } from 'superstruct';
+import { object, number, string, boolean, optional, array } from 'superstruct';
 import { superstructResolver } from './superstruct';
 
-const Article = struct({
-  id: 'number',
-  title: 'string',
-  isPublished: 'boolean?',
-  tags: ['string'],
-  author: {
-    id: 'number',
-  },
+const Article = object({
+  id: number(),
+  title: string(),
+  isPublished: optional(boolean()),
+  tags: array(string()),
+  author: object({
+    id: number(),
+  }),
 });
 
 describe('superstructResolver', () => {
@@ -36,6 +36,7 @@ describe('superstructResolver', () => {
         id: 'test',
       },
     };
+
     expect(await superstructResolver(Article)(data)).toMatchSnapshot();
   });
 });

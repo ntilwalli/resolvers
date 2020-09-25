@@ -80,7 +80,7 @@
     "rollup": "^2.16.1",
     "rollup-plugin-terser": "^6.1.0",
     "rollup-plugin-typescript2": "^0.27.1",
-    "superstruct": "^0.8.3",
+    "superstruct": "github:ntilwalli/superstruct#publish/394",
     "ts-jest": "^26.1.0",
     "typescript": "^3.7.5",
     "yup": "^0.29.1",
